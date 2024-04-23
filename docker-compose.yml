@@ -1,0 +1,44 @@
+version: '3.8'
+services:
+  # Uncomment database service or mount db volume to web for sqlite
+  # db:
+  #   build:
+  #     context: ./etc/docker/mysql_db
+  #   volumes:
+  #     - ./var/volumes/db:/home/db/data
+  #   environment:
+  #     MYSQL_DATABASE: dev_db
+  #     MYSQL_USER: user
+  #     MYSQL_ROOT_PASSWORD: example
+  #     MYSQL_PASSWORD: example
+  #   user: "${USER_ID}:${GROUP_ID}"
+
+  web:
+    build:
+      context: .
+      dockerfile: ./etc/docker/web/Dockerfile
+      args:
+        GID: ${GROUP_ID}
+        UID: ${USER_ID}
+    volumes:
+      - ./var/volumes/server_home/:/home/${SERVER_USER}
+      - ./server/:/home/${SERVER_USER}/server
+      - ./etc:/home/${SERVER_USER}/etc
+      - ./server/app/static:/var/www/static
+      - ./var/volumes/media:/var/www/media
+      - ./var/volumes/db:/var/db  # volume for sqlite
+    command: [
+      "python", "-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--reload", "--reload-dir=app", "--reload-delay=1"
+    ]
+    ports: ["8000:8000"]
+    environment:
+      - FASTAPI_DOTENV=/home/${SERVER_USER}/etc/env/dev
+    # depends_on: ["db"]
+
+  nginx:
+    build: ./etc/docker/nginx
+    ports: ["8080:8080"]
+    user: ${USER_ID}
+    volumes:
+      - ./server/app/static:/var/www/static
+    depends_on: ["web"]
