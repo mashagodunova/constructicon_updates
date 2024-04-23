@@ -1,0 +1,22 @@
+{% import "macros.html" as macros %}
+
+{% extends "browse.html" %}
+
+{% block search %}
+  {{ macros::treeselect(key="semantic_types") }}
+  {{ macros::treeselect(key="syntactic_type_of_construction") }}
+
+  {{ macros::treeselect(key="semantic_roles") }}
+  {{ macros::treeselect(key="syntactic_function_of_anchor") }}
+
+  {{ macros::treeselect(key="morphology") }}
+  {{ macros::treeselect(key="glosses") }}
+  {{ macros::treeselect(key="syntactic_structure_of_anchor") }}
+
+  {{ macros::treeselect(key="level") }}
+  {{ macros::treeselect(key="part_of_speech_of_anchor") }}
+
+{% endblock search %}
+
+{% block footer %}
+{% endblock footer %}

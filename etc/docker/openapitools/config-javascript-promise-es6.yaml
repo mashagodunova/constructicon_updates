@@ -1,0 +1,6 @@
+generatorName: javascript-promise-es6
+outputDir: ./api_clients/javascript-promise-es6
+inputSpec: ./api_clients/api_schema.yaml
+disallowAdditionalPropertiesIfNotPresent: false
+additionalProperties:
+  useSingleRequestParameter: "true"

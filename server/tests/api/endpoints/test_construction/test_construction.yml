@@ -1,0 +1,276 @@
+3:
+  anchor_poss:
+  - id: 1
+    name: Conjunction
+  - id: 2
+    name: Pronoun
+  - id: 3
+    name: Particle
+  anchor_words: а, как, же
+  cefr_level: A1
+  comment: 'Не путать с конструкцией 682. См. другие конструкции, которые содержат
+    "как же": 1107, 1108, 1109, 1814, 2015.'
+  common_fillers: ''
+  communicative_type: i
+  definitions:
+  - language: en
+    value: This construction is used to remind the addressee of [some fact]Theme,
+      which they must take into consideration. This fact is known to all of the participants
+      in the conversation.
+  - language: 'no'
+    value: Konstruksjonen anvendes for å minne adressaten på [et faktum]Theme som
+      vedkommende må ta i betraktning. Faktumet er kjent for alle deltakerne i samtalen.
+  - language: ru
+    value: Конструкция используется для того, чтобы напомнить адресату о [каком-либо
+      факте]Theme, который он должен принять во внимание. Этот факт известен всем
+      участникам беседы.
+  dependency_structure: '[root как [advmod же] [nsubj NP-Nom]]+[root [cc а] как [advmod
+    же] [nsubj NP-Nom]]'
+  equivalents:
+  - language: en
+    value: What about X?
+  - language: 'no'
+    value: Hva med X?
+  examples:
+  - number: 1
+    value: 'Иван поднял голову и спросил: ― А как же [я]Theme? ― Ты будешь жить с
+      женой и воспитывать сына, ― ответила Ирина.'
+  - number: 2
+    value: ― Всё, ― объявил водитель, ― дальше не поеду. ― Как же [деньги]Theme? Я
+      заплатил за билет!
+  - number: 3
+    value: В нашем городе ему предложили хорошую работу, поэтому он недолго думая
+      сорвался с насиженного места и уехал. ― А как же  [жена и дети]Theme? ― поинтересовалась
+      Маша.
+  - number: 4
+    value: 'Но как только разговор заходит о семейном обучении, первым делом звучит:
+      «А как же [общение]Theme? [Социализация]Theme?»'
+  - number: 5
+    value: 'В деревне делали более лёгкую пиццу: тесто поливали оливковым маслом,
+      выкладывали маслины или вообще ничем не украшали. А как же [томаты]Theme, спросите
+      вы. Ведь без них попросту невозможно представить себе пиццу.'
+  family: ''
+  glosses_dict: {}
+  id: 3
+  illustration: А как же мама?
+  illustration_dependency_structure: '[root [cc А] как [advmod же] [nsubj мама]?]'
+  morphological_tags:
+  - id: 1
+    name: NP
+  - id: 2
+    name: Nom
+  name: (а) как же NP-Nom?
+  name_ud: (а) как же NP-Nom?
+  references: No references
+  semantic_roles:
+  - id: 1
+    name: Theme
+  semantic_types:
+  - id: 1
+    name: Reaction to the previous discourse
+    parent_id: null
+  - id: 31
+    name: Surprise
+    parent_id: 1
+  - id: 2
+    name: Mirative
+    parent_id: null
+  syntactic_functions:
+  - id: 1
+    name: Praedicative Expression
+  syntactic_structures:
+  - id: 1
+    name: Not Applicable
+  syntactic_types:
+  - id: 1
+    name: Clause
+  usage_label: n
+4:
+  anchor_poss:
+  - id: 1
+    name: Conjunction
+  - id: 4
+    name: Preposition
+  - id: 2
+    name: Pronoun
+  - id: 5
+    name: Adverb
+  anchor_words: а, при, чём, здесь, тут
+  cefr_level: A2
+  comment: No comment yet
+  common_fillers: я, он
+  communicative_type: ie
+  definitions:
+  - language: en
+    value: This construction is used to express the speaker’s confusion or lack of
+      awareness of the logical connection between the topic of discussion and the
+      last stated [argument]Theme.
+  - language: 'no'
+    value: Konstruksjonen anvendes for å uttrykke at taleren er i villrede eller ikke
+      forstår den logiske forbindelsen mellom samtalens tema og det sist anførte [argumentet]Theme.
+  - language: ru
+    value: Конструкция используется для выражения недоумения или непонимания говорящим
+      логической связи между темой дискуссии и последним приведенным [аргументом]Theme.
+  dependency_structure: '[root [case при] чём [advmod здесь] [cop Cop] [nsubj NP-Nom]?]+[root
+    [cc а] [case при] чём [advmod тут] [cop Cop] [nsubj NP-Nom]?]+[root [case при]
+    чём [advmod здесь] [cop Cop] [nsubj NP-Nom]?]+[root [cc а] [case при] чём [advmod
+    тут] [cop Cop] [nsubj NP-Nom]?]'
+  equivalents:
+  - language: en
+    value: What does X have to do with Y?
+  - language: 'no'
+    value: Hva har X med saken å gjøre? / Hva har X med det å gjøre?
+  examples:
+  - number: 1
+    value: Но при чём здесь [недостатки]Theme, когда речь идёт о собственных детях.
+  - number: 2
+    value: ― А при чём тут [я]Theme, ― удивилась Ирина.
+  - number: 3
+    value: Я спросил его, при чём здесь [приезжие гости]Theme, если они никакого отношения
+      к сломанному столу не имеют.
+  - number: 4
+    value: ― Кредит, ― сказал он грозно, ― портит отношения. При чем здесь был [кредит]Theme,
+      я не понял.
+  - number: 5
+    value: А у нас даже третьей комнаты нет… Мама не поняла, при чем здесь [третья
+      комната]Theme.
+  family: ''
+  glosses_dict: {}
+  id: 4
+  illustration: При чём здесь наши отношения?
+  illustration_dependency_structure: '[root [case При] чём [advmod здесь] [det наши]
+    [nsubj отношения]?]'
+  morphological_tags:
+  - id: 3
+    name: Cop
+  - id: 1
+    name: NP
+  - id: 2
+    name: Nom
+  name: (а) при чём здесь/тут Cop NP-Nom?
+  name_ud: (а) при чём здесь/тут Cop NP-Nom?
+  references: No references
+  semantic_roles:
+  - id: 1
+    name: Theme
+  semantic_types:
+  - id: 1
+    name: Reaction to the previous discourse
+    parent_id: null
+  - id: 31
+    name: Surprise
+    parent_id: 1
+  syntactic_functions:
+  - id: 1
+    name: Praedicative Expression
+  syntactic_structures:
+  - id: 2
+    name: Prepositional Phrase
+  syntactic_types:
+  - id: 2
+    name: Copula Construction
+  usage_label: n
+5:
+  anchor_poss:
+  - id: 1
+    name: Conjunction
+  - id: 2
+    name: Pronoun
+  - id: 3
+    name: Particle
+  - id: 6
+    name: Verb
+  anchor_words: а, кто, же, его, её, их, знает
+  cefr_level: C1
+  comment: 'Не путать с другими конструкциями, которые содержат глагол "знать": 335,
+    359, 1061, 2300.'
+  common_fillers: бог, чёрт, шут, пёс, бес, господь, леший, дьявол
+  communicative_type: d
+  definitions:
+  - language: en
+    value: 'This construction indicates that, in the speaker’s opinion, [no one]Cognizer
+      knows about the [circumstances of a given situation]Content. The construction
+      reports that this information is known only to an [implausible or inaccessible
+      participant]Cognizer. If the [participant of the situation]Topic, described
+      in the clause is of feminine gender and/or plural, then is it possible to reflect
+      this (with the fillers “её” or “их” in the PronPers-3 slot) or not to reflect
+      this (by using the filler “его” in the PronPers-3 slot) in the first part of
+      the construction. The noun is limited to the following: бог ‘god’, чёрт ‘devil,
+      шут ‘jester’, пёс ‘dog’, бес ‘demon’, леший ‘forest spirit’, дьявол ‘devil’,
+      господь ‘lord’.'
+  - language: 'no'
+    value: Konstruksjonen anvendes for å uttrykke at taleren er i villrede eller ikke
+      forstår den logiske forbindelsen mellom samtalens tema og det sist anførte [argumentet]Theme.
+  - language: ru
+    value: 'Конструкция обозначает, что по мнению говорящего, [никому]Cognizer не
+      известно об [обстоятельствах какой-либо ситуации]Content. Конструкция буквально
+      сообщает, что эта информация известна только некоторому  [невероятному или недоступному
+      участнику]Cognizer. Если [участник ситуации]Topic, описанной в клаузе, имеет
+      женский род и/или стоит в форме множественного числа, то это можно отражать
+      (заполнитель «её» или «их» в слоте PronPers-3) или не отражать (заполнитель
+      «его» в слоте PronPers-3) в первой части конструкции. Ограничение на имя существительное:
+      бог, чёрт, шут, пёс, бес, леший, дьявол, господь.'
+  dependency_structure: '[root [nsubj Noun-Nom] [obj PronPers-3.Acc] знает, [ccomp
+    Cl]]+[root [nsubj кто] [obj PronPers-3.Acc] знает, [ccomp Cl]]+[root [nsubj Noun-Nom]
+    [discourse же] [obj PronPers-3.Acc] знает, [ccomp Cl]]+[root [nsubj кто] [discourse
+    же] [obj PronPers-3.Acc] знает, [ccomp Cl]]+[root [nsubj Noun-Nom] знает, [ccomp
+    Cl]]+[root [nsubj кто] знает, [ccomp Cl]]+[root [nsubj Noun-Nom] [discourse же]
+    знает, [ccomp Cl]]+[root [nsubj кто] [discourse же] знает, [ccomp Cl]'
+  equivalents:
+  - language: en
+    value: God knows why X did Y
+  - language: 'no'
+    value: Gudene vet, ...
+  examples:
+  - number: 1
+    value: '[Чёрт]Cognizer [его]Topic знает, [что она вчера вечером делала в лаборатории]Content.'
+  - number: 2
+    value: '[Бог]Cognizer [его]Topic знает, [где они сейчас]Content.'
+  - number: 3
+    value: ― [Шут]Cognizer [его]Topic знает, [как оно получилось]Content. Всё считал
+      ― есть сено в запасе, есть. Ещё с прошлого лета стог сена в лесу оставил.
+  - number: 4
+    value: '[Чёрт]Cognizer [ее]Topic знает, [что у нее там случилось со здоровьем]Content.'
+  - number: 5
+    value: '[Бог]Cognizer [их]Topic знает, [зачем они приезжали ― по делам или так,
+      погулять в столице]Content.'
+  family: ''
+  glosses_dict: {}
+  id: 5
+  illustration: Кто его знает, почему она так поступила.
+  illustration_dependency_structure: '[root [nsubj Кто] [obj его] знает, [advmod почему]
+    [nsubj она] [advmod так] [ccomp поступила].]'
+  morphological_tags:
+  - id: 4
+    name: Noun
+  - id: 2
+    name: Nom
+  - id: 5
+    name: Cl
+  name: (а) Noun-Nom/кто (же) (PronPers-3.Acc) знает, Cl
+  name_ud: (а) N-Nom/кто (же) (PronPers-3.Acc) знает, Cl
+  references: No references
+  semantic_roles:
+  - id: 2
+    name: Content
+  - id: 3
+    name: Cognizer
+  - id: 4
+    name: Topic
+  semantic_types:
+  - id: 3
+    name: Epistemic modality
+    parent_id: null
+  - id: 32
+    name: Low degree of certainty
+    parent_id: 3
+  syntactic_functions:
+  - id: 2
+    name: Matrix Predicate
+  syntactic_structures:
+  - id: 3
+    name: Subject and Predicate
+  syntactic_types:
+  - id: 3
+    name: Matrix and Sentential Complement Construction
+  usage_label: c

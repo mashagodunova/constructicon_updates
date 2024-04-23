@@ -1,0 +1,6 @@
+generatorName: python
+outputDir: ./api_clients/py
+inputSpec: ./api_clients/api_schema.yaml
+disallowAdditionalPropertiesIfNotPresent: false
+additionalProperties:
+  useSingleRequestParameter: "true"

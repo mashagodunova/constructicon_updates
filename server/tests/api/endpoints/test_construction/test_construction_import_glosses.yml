@@ -1,0 +1,1080 @@
+items:
+- anchor_poss:
+  - id: 1
+    name: Conjunction
+  - id: 2
+    name: Pronoun
+  - id: 3
+    name: Particle
+  anchor_words: а, как, же
+  cefr_level: A1
+  comment: 'Не путать с конструкцией 682. См. другие конструкции, которые содержат
+    "как же": 1107, 1108, 1109, 1814, 2015.'
+  common_fillers: ''
+  communicative_type: i
+  definitions:
+  - language: en
+    value: This construction is used to remind the addressee of [some fact]Theme,
+      which they must take into consideration. This fact is known to all of the participants
+      in the conversation.
+  - language: 'no'
+    value: Konstruksjonen anvendes for å minne adressaten på [et faktum]Theme som
+      vedkommende må ta i betraktning. Faktumet er kjent for alle deltakerne i samtalen.
+  - language: ru
+    value: Конструкция используется для того, чтобы напомнить адресату о [каком-либо
+      факте]Theme, который он должен принять во внимание. Этот факт известен всем
+      участникам беседы.
+  dependency_structure: '[root как [advmod же] [nsubj NP-Nom]]+[root [cc а] как [advmod
+    же] [nsubj NP-Nom]]'
+  equivalents:
+  - language: en
+    value: What about X?
+  - language: 'no'
+    value: Hva med X?
+  examples:
+  - number: 1
+    value: 'Иван поднял голову и спросил: ― А как же [я]Theme? ― Ты будешь жить с
+      женой и воспитывать сына, ― ответила Ирина.'
+  - number: 2
+    value: ― Всё, ― объявил водитель, ― дальше не поеду. ― Как же [деньги]Theme? Я
+      заплатил за билет!
+  - number: 3
+    value: В нашем городе ему предложили хорошую работу, поэтому он недолго думая
+      сорвался с насиженного места и уехал. ― А как же  [жена и дети]Theme? ― поинтересовалась
+      Маша.
+  - number: 4
+    value: 'Но как только разговор заходит о семейном обучении, первым делом звучит:
+      «А как же [общение]Theme? [Социализация]Theme?»'
+  - number: 5
+    value: 'В деревне делали более лёгкую пиццу: тесто поливали оливковым маслом,
+      выкладывали маслины или вообще ничем не украшали. А как же [томаты]Theme, спросите
+      вы. Ведь без них попросту невозможно представить себе пиццу.'
+  family: ''
+  glosses_dict:
+    en:
+    - value: (but)
+    - value: as
+    - value: FOC.PTCL
+    - value: NP-NOM
+    ru:
+    - value: (а)
+    - value: как
+    - value: же
+    - value: NP-Nom?
+  id: 3
+  illustration: А как же мама?
+  illustration_dependency_structure: '[root [cc А] как [advmod же] [nsubj мама]?]'
+  morphological_tags:
+  - id: 1
+    name: NP
+  - id: 2
+    name: Nom
+  name: (а) как же NP-Nom?
+  name_ud: (а) как же NP-Nom?
+  references: No references
+  semantic_roles:
+  - id: 1
+    name: Theme
+  semantic_types:
+  - id: 1
+    name: Reaction to the previous discourse
+    parent_id: null
+  - id: 31
+    name: Surprise
+    parent_id: 1
+  - id: 2
+    name: Mirative
+    parent_id: null
+  syntactic_functions:
+  - id: 1
+    name: Praedicative Expression
+  syntactic_structures:
+  - id: 1
+    name: Not Applicable
+  syntactic_types:
+  - id: 1
+    name: Clause
+  usage_label: n
+- anchor_poss:
+  - id: 1
+    name: Conjunction
+  - id: 4
+    name: Preposition
+  - id: 2
+    name: Pronoun
+  - id: 5
+    name: Adverb
+  anchor_words: а, при, чём, здесь, тут
+  cefr_level: A2
+  comment: No comment yet
+  common_fillers: я, он
+  communicative_type: ie
+  definitions:
+  - language: en
+    value: This construction is used to express the speaker’s confusion or lack of
+      awareness of the logical connection between the topic of discussion and the
+      last stated [argument]Theme.
+  - language: 'no'
+    value: Konstruksjonen anvendes for å uttrykke at taleren er i villrede eller ikke
+      forstår den logiske forbindelsen mellom samtalens tema og det sist anførte [argumentet]Theme.
+  - language: ru
+    value: Конструкция используется для выражения недоумения или непонимания говорящим
+      логической связи между темой дискуссии и последним приведенным [аргументом]Theme.
+  dependency_structure: '[root [case при] чём [advmod здесь] [cop Cop] [nsubj NP-Nom]?]+[root
+    [cc а] [case при] чём [advmod тут] [cop Cop] [nsubj NP-Nom]?]+[root [case при]
+    чём [advmod здесь] [cop Cop] [nsubj NP-Nom]?]+[root [cc а] [case при] чём [advmod
+    тут] [cop Cop] [nsubj NP-Nom]?]'
+  equivalents:
+  - language: en
+    value: What does X have to do with Y?
+  - language: 'no'
+    value: Hva har X med saken å gjøre? / Hva har X med det å gjøre?
+  examples:
+  - number: 1
+    value: Но при чём здесь [недостатки]Theme, когда речь идёт о собственных детях.
+  - number: 2
+    value: ― А при чём тут [я]Theme, ― удивилась Ирина.
+  - number: 3
+    value: Я спросил его, при чём здесь [приезжие гости]Theme, если они никакого отношения
+      к сломанному столу не имеют.
+  - number: 4
+    value: ― Кредит, ― сказал он грозно, ― портит отношения. При чем здесь был [кредит]Theme,
+      я не понял.
+  - number: 5
+    value: А у нас даже третьей комнаты нет… Мама не поняла, при чем здесь [третья
+      комната]Theme.
+  family: ''
+  glosses_dict:
+    en:
+    - value: (but)
+    - value: by
+    - value: what.LOC
+    - value: '[here]/[here]'
+    - value: COP
+    - value: NP-NOM
+    ru:
+    - value: (а)
+    - value: при
+    - value: чём
+    - value: здесь/тут
+    - value: Cop
+    - value: NP-Nom?
+  id: 4
+  illustration: При чём здесь наши отношения?
+  illustration_dependency_structure: '[root [case При] чём [advmod здесь] [det наши]
+    [nsubj отношения]?]'
+  morphological_tags:
+  - id: 3
+    name: Cop
+  - id: 1
+    name: NP
+  - id: 2
+    name: Nom
+  name: (а) при чём здесь/тут Cop NP-Nom?
+  name_ud: (а) при чём здесь/тут Cop NP-Nom?
+  references: No references
+  semantic_roles:
+  - id: 1
+    name: Theme
+  semantic_types:
+  - id: 1
+    name: Reaction to the previous discourse
+    parent_id: null
+  - id: 31
+    name: Surprise
+    parent_id: 1
+  syntactic_functions:
+  - id: 1
+    name: Praedicative Expression
+  syntactic_structures:
+  - id: 2
+    name: Prepositional Phrase
+  syntactic_types:
+  - id: 2
+    name: Copula Construction
+  usage_label: n
+- anchor_poss:
+  - id: 1
+    name: Conjunction
+  - id: 2
+    name: Pronoun
+  - id: 3
+    name: Particle
+  - id: 6
+    name: Verb
+  anchor_words: а, кто, же, его, её, их, знает
+  cefr_level: C1
+  comment: 'Не путать с другими конструкциями, которые содержат глагол "знать": 335,
+    359, 1061, 2300.'
+  common_fillers: бог, чёрт, шут, пёс, бес, господь, леший, дьявол
+  communicative_type: d
+  definitions:
+  - language: en
+    value: 'This construction indicates that, in the speaker’s opinion, [no one]Cognizer
+      knows about the [circumstances of a given situation]Content. The construction
+      reports that this information is known only to an [implausible or inaccessible
+      participant]Cognizer. If the [participant of the situation]Topic, described
+      in the clause is of feminine gender and/or plural, then is it possible to reflect
+      this (with the fillers “её” or “их” in the PronPers-3 slot) or not to reflect
+      this (by using the filler “его” in the PronPers-3 slot) in the first part of
+      the construction. The noun is limited to the following: бог ‘god’, чёрт ‘devil,
+      шут ‘jester’, пёс ‘dog’, бес ‘demon’, леший ‘forest spirit’, дьявол ‘devil’,
+      господь ‘lord’.'
+  - language: 'no'
+    value: Konstruksjonen anvendes for å uttrykke at taleren er i villrede eller ikke
+      forstår den logiske forbindelsen mellom samtalens tema og det sist anførte [argumentet]Theme.
+  - language: ru
+    value: 'Конструкция обозначает, что по мнению говорящего, [никому]Cognizer не
+      известно об [обстоятельствах какой-либо ситуации]Content. Конструкция буквально
+      сообщает, что эта информация известна только некоторому  [невероятному или недоступному
+      участнику]Cognizer. Если [участник ситуации]Topic, описанной в клаузе, имеет
+      женский род и/или стоит в форме множественного числа, то это можно отражать
+      (заполнитель «её» или «их» в слоте PronPers-3) или не отражать (заполнитель
+      «его» в слоте PronPers-3) в первой части конструкции. Ограничение на имя существительное:
+      бог, чёрт, шут, пёс, бес, леший, дьявол, господь.'
+  dependency_structure: '[root [nsubj Noun-Nom] [obj PronPers-3.Acc] знает, [ccomp
+    Cl]]+[root [nsubj кто] [obj PronPers-3.Acc] знает, [ccomp Cl]]+[root [nsubj Noun-Nom]
+    [discourse же] [obj PronPers-3.Acc] знает, [ccomp Cl]]+[root [nsubj кто] [discourse
+    же] [obj PronPers-3.Acc] знает, [ccomp Cl]]+[root [nsubj Noun-Nom] знает, [ccomp
+    Cl]]+[root [nsubj кто] знает, [ccomp Cl]]+[root [nsubj Noun-Nom] [discourse же]
+    знает, [ccomp Cl]]+[root [nsubj кто] [discourse же] знает, [ccomp Cl]'
+  equivalents:
+  - language: en
+    value: God knows why X did Y
+  - language: 'no'
+    value: Gudene vet, ...
+  examples:
+  - number: 1
+    value: '[Чёрт]Cognizer [его]Topic знает, [что она вчера вечером делала в лаборатории]Content.'
+  - number: 2
+    value: '[Бог]Cognizer [его]Topic знает, [где они сейчас]Content.'
+  - number: 3
+    value: ― [Шут]Cognizer [его]Topic знает, [как оно получилось]Content. Всё считал
+      ― есть сено в запасе, есть. Ещё с прошлого лета стог сена в лесу оставил.
+  - number: 4
+    value: '[Чёрт]Cognizer [ее]Topic знает, [что у нее там случилось со здоровьем]Content.'
+  - number: 5
+    value: '[Бог]Cognizer [их]Topic знает, [зачем они приезжали ― по делам или так,
+      погулять в столице]Content.'
+  family: ''
+  glosses_dict:
+    en:
+    - value: (but)
+    - value: '[Noun-NOM]/[who]'
+    - value: (FOC.PTCL)
+    - value: (PRONPERS-3.ACC)
+    - value: know-PRS.3SG
+    - value: Cl
+    ru:
+    - value: (а)
+    - value: Noun-Nom/кто
+    - value: (же)
+    - value: (PronPers-3.Acc)
+    - value: зна-ет,
+    - value: Cl
+  id: 5
+  illustration: Кто его знает, почему она так поступила.
+  illustration_dependency_structure: '[root [nsubj Кто] [obj его] знает, [advmod почему]
+    [nsubj она] [advmod так] [ccomp поступила].]'
+  morphological_tags:
+  - id: 4
+    name: Noun
+  - id: 2
+    name: Nom
+  - id: 5
+    name: Cl
+  name: (а) Noun-Nom/кто (же) (PronPers-3.Acc) знает, Cl
+  name_ud: (а) N-Nom/кто (же) (PronPers-3.Acc) знает, Cl
+  references: No references
+  semantic_roles:
+  - id: 2
+    name: Content
+  - id: 3
+    name: Cognizer
+  - id: 4
+    name: Topic
+  semantic_types:
+  - id: 3
+    name: Epistemic modality
+    parent_id: null
+  - id: 32
+    name: Low degree of certainty
+    parent_id: 3
+  syntactic_functions:
+  - id: 2
+    name: Matrix Predicate
+  syntactic_structures:
+  - id: 3
+    name: Subject and Predicate
+  syntactic_types:
+  - id: 3
+    name: Matrix and Sentential Complement Construction
+  usage_label: c
+- anchor_poss:
+  - id: 3
+    name: Particle
+  - id: 2
+    name: Pronoun
+  - id: 4
+    name: Preposition
+  anchor_words: а, так, что, насчёт
+  cefr_level: B1
+  comment: См. не путать с конструкциями 147 как насчёт XP? (Как насчёт выпить?);
+    687 (а) насчёт NP-Gen – Cl (А насчёт папы – он уехал на рыбалку).
+  common_fillers: завтра, сегодня, кино
+  communicative_type: i
+  definitions:
+  - language: en
+    value: This construction indicates that the speaker is inquiring about a [question]Theme
+      or [topic]Theme that has previously been discussed. The slot can be filled with
+      a noun phrase, verb phrase or an adverb.
+  - language: 'no'
+    value: Konstruksjonen betyr at taleren forhører seg om [et spørsmål]Theme eller
+      [et tema]Theme som har vært på tale tidligere. Sloten kan fylles av en nominalfrase,
+      en verbalfrase eller et adverb.
+  - language: ru
+    value: Конструкция обозначает, что говорящий интересуется каким-либо [вопросом]Theme
+      или [темой]Theme, о которой говорилось раньше. Слот может заполняться именной
+      группой, глагольной группой или наречием.
+  dependency_structure: '[root [nsubj что] [case насчёт] XP?]+[root [cc а] [nsubj
+    что] [case насчёт] XP?]+[root [part так] [nsubj что] [case насчёт] XP?]'
+  equivalents:
+  - language: en
+    value: What about X? / How about X-ing?
+  - language: 'no'
+    value: Hva gjør du på X?
+  examples:
+  - number: 1
+    value: А что насчёт [завтра]Theme, мы поедем на дачу?
+  - number: 2
+    value: Так что насчёт [нашего контракта]Theme?
+  - number: 3
+    value: Что насчёт [фильма]Theme? Какой будем сегодня вечером смотреть.
+  - number: 4
+    value: ― Так что насчёт [моей просьбы]Theme? ― Еще раз взвесим.
+  - number: 5
+    value: Вы ранее говорили, что скучаете по своему делу. А что насчёт [вернуться
+      к нему]Theme?
+  family: Introducing a topic for discussion
+  glosses_dict:
+    en:
+    - value: ([but]/[so])
+    - value: what
+    - value: about
+    - value: XP
+    ru:
+    - value: (а/так)
+    - value: что
+    - value: насчёт
+    - value: XP?
+  id: 6
+  illustration: Что насчёт пятницы? Какие у тебя планы?
+  illustration_dependency_structure: '[root [nsubj Что] [case насчёт] пятницы?] [root
+    Какие у тебя планы?]'
+  morphological_tags:
+  - id: 6
+    name: XP
+  - id: 7
+    name: Adv
+  - id: 1
+    name: NP
+  - id: 8
+    name: VP
+  name: (а/так) что насчёт XP?
+  name_ud: (а/так) что насчёт XP?
+  references: No references
+  semantic_roles:
+  - id: 1
+    name: Theme
+  semantic_types:
+  - id: 4
+    name: Discourse structure
+    parent_id: null
+  - id: 33
+    name: Topic
+    parent_id: 4
+  syntactic_functions:
+  - id: 3
+    name: Modifier
+  syntactic_structures:
+  - id: 1
+    name: Not Applicable
+  syntactic_types:
+  - id: 1
+    name: Clause
+  usage_label: n
+- anchor_poss:
+  - id: 7
+    name: Adjective
+  - id: 4
+    name: Preposition
+  anchor_words: похожий, похож, похожа, похоже, похожи, на, по
+  cefr_level: A1
+  comment: См. похожие конструкции 13, 1180, 1181.
+  common_fillers: ''
+  communicative_type: na
+  definitions:
+  - language: en
+    value: This construction expresses a comparison and denotes the similarity between
+      an [object]Theme, [participant]Participant or [situation]Situation, and [some
+      prototype]Standard in terms of a certain [attribute]Property. The similarity
+      does not necessarily imply a complete match.
+  - language: 'no'
+    value: Konstruksjonen uttrykker sammenlikning og betegner en likhet mellom [et
+      objekt]Theme, [en deltaker]Participant eller [en situasjon]Situation og [en
+      gitt prototyp]Standard med tanke på et gitt [kjennetegn]Property. Likheten innebærer
+      ikke nødvendigvis noe absolutt sammenfall.
+  - language: ru
+    value: Конструкция выражает сравнение и обозначает сходство между [объектом]Theme,
+      [участником]Participant или [ситуацией]Situation и [некоторым прототипом]Standard
+      по некоторому [признаку]Property. Сходство необязательно предполагает их полное
+      совпадение.
+  dependency_structure: '[root [nsubj NP-Nom] [cop Cop] похож [obl[case на] NP-Acc].]+[root
+    [nsubj NP-Nom] [cop Cop] похож [obl[case на] NP-Acc] [obl[case по] NP-Dat].]+[root
+    [nsubj NP-Nom] [cop Cop] похож [obl[case на] NP-Acc] [iobj NP-Ins].]'
+  equivalents:
+  - language: en
+    value: X looks like Y / X resembles Y
+  - language: 'no'
+    value: X ser ut som Y / X er lik Y
+  examples:
+  - number: 1
+    value: Внешне [эти растения]Theme мало похожи на [кактусы]Standard.
+  - number: 2
+    value: '[Девочка]Participant была похожа на [кореянку]Standard.'
+  - number: 3
+    value: И вдруг она появляется в нашем дворе и спрашивает, где я живу. [Это]Situation
+      было похоже на [кошмарный сон]Standard, как если бы за мной явилась колдунья
+      из страшной сказки.
+  - number: 4
+    value: '[Ее комната без окна]Theme была похожа по [размерам]Property на [стенной
+      шкаф]Standard.'
+  - number: 5
+    value: '[Мальчик]Participant так был похож на [Игоря]Standard [своим серьезным
+      видом]Property, [всей своей мрачностью]Property, даже прическа была у него такая
+      же, как у Игоря.'
+  family: ''
+  glosses_dict:
+    en:
+    - value: NP-NOM
+    - value: COP
+    - value: alike-SHORT
+    - value: 'on'
+    - value: NP-ACC
+    - value: ([NP-INS]/
+    - value: '[by'
+    - value: NP-DAT])
+    ru:
+    - value: NP-Nom
+    - value: Cop
+    - value: похожий-Short
+    - value: на
+    - value: NP-Acc
+    - value: (NP-Ins/
+    - value: по
+    - value: NP-Dat)
+  id: 7
+  illustration: Вася похож на папу.
+  illustration_dependency_structure: '[root [nsubj Вася] похож [obl[case на] папу].]'
+  morphological_tags:
+  - id: 1
+    name: NP
+  - id: 2
+    name: Nom
+  - id: 3
+    name: Cop
+  - id: 9
+    name: Short
+  - id: 10
+    name: Acc
+  - id: 11
+    name: Ins
+  - id: 12
+    name: Dat
+  name: NP-Nom Cop похожий-Short на NP-Acc (NP-Ins/по NP-Dat)
+  name_ud: NP-Nom Cop похожий-Short на NP-Acc (NP-Ins/по NP-Dat)
+  references: No references
+  semantic_roles:
+  - id: 5
+    name: Property
+  - id: 1
+    name: Theme
+  - id: 6
+    name: Standard
+  - id: 7
+    name: Situation
+  - id: 8
+    name: Participant
+  semantic_types:
+  - id: 5
+    name: Comparison
+    parent_id: null
+  - id: 34
+    name: Similarity
+    parent_id: 5
+  syntactic_functions:
+  - id: 1
+    name: Praedicative Expression
+  syntactic_structures:
+  - id: 4
+    name: Nominal Pattern
+  syntactic_types:
+  - id: 2
+    name: Copula Construction
+  usage_label: n
+- anchor_poss:
+  - id: 3
+    name: Particle
+  - id: 1
+    name: Conjunction
+  - id: 2
+    name: Pronoun
+  anchor_words: вот, то-то, и, оно, что
+  cefr_level: C1
+  comment: См. близкие по значению конструкции 50 и 1813.
+  common_fillers: NA
+  communicative_type: d
+  definitions:
+  - language: en
+    value: This construction means that the speaker confirms the correctness of the
+      conversation partner’s judgement about [a situation]Situation or its [circumstances]Theme
+      and emphasizes this.  Usually, this construction is used in a dialogue and expresses
+      the speaker’s reaction to the preceding remark of his/her conversation partner
+      (examples 1, 2, 3). The construction can also occur when presenting the inner
+      monologue of the speaker that is constructed as a conversation in which the
+      speaker is talking to him- or herself (examples 4, 5). Often said in a reproachful
+      or instructive tone.
+  - language: 'no'
+    value: Konstruksjonen betyr at taleren bekrefter riktigheten av samtalepartnerens
+      utsagn om [en gitt situasjon]Situation eller [omstendighetene]Theme rundt den,
+      og vektlegger dette. Vanligvis brukes konstruksjonen i en dialogsituasjon og
+      uttrykker talerens reaksjon på samtalepartnerens foregående replikk (eksempel
+      1, 2 og 3). Konstruksjonen forekommer også ved gjengivelse av indre tale når
+      den tar form av en dialog taleren fører med seg selv (eksempel 4 og 5). Fremføres
+      ofte i en bebreidende eller belærende tone.
+  - language: ru
+    value: Конструкция обозначает, что говорящий подтверждает правдивость суждения
+      собеседника о [некоторой ситуации]Situation или ее [обстоятельствах]Theme и
+      акцентирует на этом особое внимание. Обычно конструкция используется в ситуации
+      диалога и выражает реакцию говорящего на предшествующую реплику собеседника
+      (примеры 1, 2, 3). Конструкция также встречается при передаче внутренней речи
+      говорящего, которая конструируется как диалог говорящего с самим собой (примеры
+      4, 5). Часто произносится с укором или назиданием.
+  dependency_structure: '[root [nsubj то-[advmod то]] [advmod и] оно, [acl:relcl [mark
+    что] Cl/XP]+[root [advmod вот] [nsubj то-[advmod то]] [advmod и] оно, [acl:relcl
+    [mark что] Cl/XP]'
+  equivalents:
+  - language: en
+    value: That's what I'm talking about!
+  - language: 'no'
+    value: det er det
+  examples:
+  - number: 1
+    value: Вот то-то и оно, что [все наши претензии к банкам (ну не все, а 90%) ―
+      лишь следствие причиненных нам неудобств]Situation.
+  - number: 2
+    value: ― У меня там одно время подруга жила, так я однажды у нее ночевать остался,
+      а машину под окнами поставил. Утром прихожу, колес нет, а машина на стопках
+      кирпичей стоит.  ―  А сигнализация что?  ― спросил Шевцов. ―  То-то и оно, что
+      [сигнализация не сработала!]Situation  ― почти обрадованно воскликнул Васильчиков.
+  - number: 3
+    value: ― Зачем тогда Киселева присылала вам детские фотографии? Зачем хотела с
+      вами встретиться? ― Понятия не имею… ― То-то и оно, что [не знаете и знать не
+      хотите]Situation. А ведь все настолько очевидно!
+  - number: 4
+    value: Конечно, если там были какие-то переговоры, связанные с завещанием, то
+      разумнее было послать адвоката…  А она почему-то не послала. Так ведь то-то
+      и оно, что [не послала, а пошла сама!]Situation Всё это вихрем носилось у меня
+      в голове…
+  - number: 5
+    value: Квартира почти продана… почти… То-то и оно, что ["почти"]Theme! Если б
+      не это "почти", я бы не топтался здесь за бесплатно.
+  family: ''
+  glosses_dict:
+    en:
+    - value: (PTCL)
+    - value: that-that
+    - value: and
+    - value: it
+    - value: what
+    - value: '[Cl]/[XP]'
+    ru:
+    - value: (вот)
+    - value: то́-то
+    - value: и
+    - value: оно́,
+    - value: что
+    - value: Cl/XP
+  id: 8
+  illustration: То-то и оно, что от меня ничего не зависит.
+  illustration_dependency_structure: '[root [nsubj То-то] [advmod и] оно, [mark что]
+    [obl [case от] меня] [nsubj ничего] [advmod не] [acl:relcl зависит].]'
+  morphological_tags:
+  - id: 5
+    name: Cl
+  - id: 6
+    name: XP
+  name: (вот) то́-то и оно́, что Cl/XP
+  name_ud: (вот) то́-то и оно́, что Cl/XP
+  references: См. также статью Добровольский Д. О., Левонтина И. Б. Тимиологический
+    компонент в семантике русских дискурсивных слов // Труды Института русского языка
+    им. В. В. Виноградова, 2014. № 2. С. 334–343.
+  semantic_roles:
+  - id: 1
+    name: Theme
+  - id: 7
+    name: Situation
+  semantic_types:
+  - id: 1
+    name: Reaction to the previous discourse
+    parent_id: null
+  - id: 35
+    name: Unspecified
+    parent_id: 1
+  - id: 4
+    name: Discourse structure
+    parent_id: null
+  - id: 36
+    name: Emphasis
+    parent_id: 4
+  syntactic_functions:
+  - id: 2
+    name: Matrix Predicate
+  syntactic_structures:
+  - id: 1
+    name: Not Applicable
+  syntactic_types:
+  - id: 3
+    name: Matrix and Sentential Complement Construction
+  usage_label: c
+- anchor_poss:
+  - id: 5
+    name: Adverb
+  - id: 2
+    name: Pronoun
+  - id: 8
+    name: Negation Marker
+  anchor_words: всё, никак, не
+  cefr_level: C1
+  comment: No comment yet
+  common_fillers: мог, могла, могли
+  communicative_type: na
+  definitions:
+  - language: en
+    value: This construction means that some [action]Action has been continuing for
+      a long time and still does not end, despite the speaker’s desire to discontinue
+      or stop it.
+  - language: 'no'
+    value: Konstruksjonen betyr at [en handling]Action har pågått lenge og enda ikke
+      tar slutt, til tross for talerens ønske om å avslutte eller stanse den.
+  - language: ru
+    value: Конструкция обозначает, что какое-либо [действие]Action продолжается долгое
+      время и по-прежнему не заканчивается, несмотря на желание говорящего прекратить
+      или остановить его.
+  dependency_structure: '[root [advmod никак] [advmod не] VP-Ipfv]+[root [advmod всё]
+    [advmod никак] [advmod не] VP-Ipfv]'
+  equivalents:
+  - language: en
+    value: in no way X
+  - language: 'no'
+    value: X har aldri Y / X kan ikke Y
+  examples:
+  - number: 1
+    value: Он никак не [мог закончить домашнее задание]Action.
+  - number: 2
+    value: Дверь всё никак не [закрывалась]Action.
+  - number: 3
+    value: А мысль крутится, крутится, никак не [останавливается]Action.
+  - number: 4
+    value: Я изо всех сил вслушивался в её голос и всё никак не [мог вспомнить]Action,
+      кому он принадлежит.
+  - number: 5
+    value: Настя искала и все никак не [находила нужный документ]Action, пока из одной
+      из папок не выпала красненькая книжка.
+  family: ''
+  glosses_dict:
+    en:
+    - value: (all)
+    - value: PTCL<in_no_way
+    - value: NEG
+    - value: VP-IPFV
+    ru:
+    - value: (всё)
+    - value: никак
+    - value: не
+    - value: VP-Ipfv
+  id: 9
+  illustration: Задача всё никак не решалась.
+  illustration_dependency_structure: '[root [nsubj Задача] [advmod всё] [advmod никак]
+    [advmod не] решалась.]'
+  morphological_tags:
+  - id: 8
+    name: VP
+  - id: 13
+    name: Ipfv
+  name: (всё) никак не VP-Ipfv
+  name_ud: (всё) никак не VP-Imp
+  references: См. также статью Чуйкова О. Ю. Некоторые особенности выражения значений,
+    соответствующих подготовительной стадии ситуации, в русском языке //Вестник СПбГУ.
+    Серия 9. 2015. Вып. 3. С. 179–189.
+  semantic_roles:
+  - id: 9
+    name: Action
+  semantic_types:
+  - id: 6
+    name: Degree of intensity
+    parent_id: null
+  - id: 37
+    name: Minimizer
+    parent_id: 6
+  - id: 67
+    name: Absence
+    parent_id: 37
+  syntactic_functions:
+  - id: 3
+    name: Modifier
+  syntactic_structures:
+  - id: 5
+    name: Double Negation
+  syntactic_types:
+  - id: 4
+    name: Head and Modifier Construction
+  usage_label: n
+- anchor_poss:
+  - id: 7
+    name: Adjective
+  - id: 2
+    name: Pronoun
+  - id: 8
+    name: Negation Marker
+  - id: 3
+    name: Particle
+  anchor_words: единственное, что, не, так, это
+  cefr_level: B2
+  comment: No comment yet
+  common_fillers: ''
+  communicative_type: d
+  definitions:
+  - language: en
+    value: 'This construction emphasizes and specifies a single [action]Action that
+      the [participant in the situation]Participant has performed or failed to perform.
+      Certain contexts with negation (examples 1, 2) may have the following meaning:
+      The participant was expected to perform some action, but this has not occurred.
+      The XP slot can be filled by a verb phrase (VP), noun phrase (NP), or prepositional
+      phrase (PP).'
+  - language: 'no'
+    value: 'Konstruksjonen fremhever og konkretiserer en [enkelthandling]Action som
+      [en deltaker i situasjonen]Participant har utført eller ikke har utført. I noen
+      tilfeller med nektelse (eksempel 1 og 2) kan den ha følgende betydning: Det
+      var forventet at deltakeren ville utøføre en gitt handling, men det skjedde
+      ikke. Sloten XP kan fylles av en verbalfrase (VP), en nominalfrase (NP) eller
+      en preposisjonsfrase (PP).'
+  - language: ru
+    value: 'Конструкция особо подчеркивает и конкретизирует некоторое единственное
+      [действие]Action, которое выполнил или не выполнил [участник ситуации]Participant.
+      В некоторых контекстах с отрицанием (примеры 1, 2) может иметь следующее значение:
+      ожидалось, что участник выполнит некоторое действие, однако этого не произошло.
+      Слот XP может заполняться глагольной группой (VP), именной группой (NP) или
+      предложной группой (PP).'
+  dependency_structure: '[root [advcl [obj что] [advmod не] VP], [mark так] [expl
+    это] [advmod не] VP]+[root единственное [acl [obj что] [advmod не] VP], [csubj
+    [mark так] [expl это] [advmod не] VP]]+[root [advcl [obj что] VP], [mark так]
+    [expl это] VP]+[root единственное [acl [obj что] VP], [csubj [mark так] [expl
+    это] VP]]'
+  equivalents:
+  - language: en
+    value: The only thing that X didn't Y is Z
+  - language: 'no'
+    value: den eneste X som Y er Z, f.eks. Det eneste som kan hindre ham, er om noe
+      skjer med våpnene.
+  examples:
+  - number: 1
+    value: Единственное что [он]Experiencer не [понимал]Action, так это [почему все
+      вокруг говорят вполголоса.]Theme
+  - number: 2
+    value: Чего не [хватает]Action [у моих детей]Participant, так это [скромности]Theme.
+  - number: 3
+    value: Единственное в чем [я]Experiencer [сомневаюсь]Action, так это [в твоей
+      преданности]Theme.
+  - number: 4
+    value: Единственное, о чем [сокрушается]Action [Анатолий Александрович]Experiencer,
+      — это то, что [не может посвятить много времени живописи]Theme.
+  - number: 5
+    value: Так что здесь мне все понравилось. Единственное, что не [понравилось]Action,
+      так это [наша игра]Theme.
+  family: ''
+  glosses_dict:
+    en:
+    - value: (only-SG.F)
+    - value: (PREP)
+    - value: what
+    - value: (NEG)
+    - value: VP
+    - value: so
+    - value: this
+    - value: (NEG)
+    - value: '[XP]/[Cl]'
+    ru:
+    - value: (единственн-ое)
+    - value: (Prep)
+    - value: что
+    - value: (не)
+    - value: VP,
+    - value: так
+    - value: это
+    - value: (не)
+    - value: XP/Cl
+  id: 10
+  illustration: Чего дочь не сделала, так это не убралась.
+  illustration_dependency_structure: '[root [advcl [obj Чего] [nsubj дочь] [advmod
+    не] сделала], [mark так] [expl это] [advmod не] conj убралась.]'
+  morphological_tags:
+  - id: 14
+    name: Prep
+  - id: 8
+    name: VP
+  - id: 6
+    name: XP
+  - id: 5
+    name: Cl
+  - id: 1
+    name: NP
+  - id: 15
+    name: PP
+  name: (единственное) (Prep) что (не) VP, так это (не) XP/Cl
+  name_ud: (единственное) (Prep) что (не) VP, так это (не) XP/Cl
+  references: No references
+  semantic_roles:
+  - id: 9
+    name: Action
+  - id: 10
+    name: Experiencer
+  - id: 1
+    name: Theme
+  - id: 8
+    name: Participant
+  semantic_types:
+  - id: 7
+    name: Quantification
+    parent_id: null
+  - id: 38
+    name: Exclusive
+    parent_id: 7
+  - id: 4
+    name: Discourse structure
+    parent_id: null
+  - id: 36
+    name: Emphasis
+    parent_id: 4
+  syntactic_functions:
+  - id: 4
+    name: Argument
+  - id: 5
+    name: Subordinator
+  - id: 6
+    name: Discourse Particle
+  syntactic_structures:
+  - id: 6
+    name: Negation
+  - id: 7
+    name: Multiword Conjunction
+  syntactic_types:
+  - id: 5
+    name: Biclausal Construction
+  usage_label: n
+- anchor_poss:
+  - id: 1
+    name: Conjunction
+  - id: 4
+    name: Preposition
+  - id: 2
+    name: Pronoun
+  anchor_words: как, по, мне, так
+  cefr_level: B2
+  comment: См. похожие конструкции 264 и 1137.
+  common_fillers: NA
+  communicative_type: d
+  definitions:
+  - language: en
+    value: This construction expresses the speaker’s opinion on some issue and usually
+      introduces an [evaluative statement]Evaluation. The construction encodes the
+      meaning ‘I believe that Cl.’
+  - language: 'no'
+    value: Konstruksjonen uttrykker talerens mening i en gitt sak og innleder vanligvis
+      [et vurderende utsagn]Evaluation. Konstruksjonen har betydningen 'jeg synes
+      at Cl'.
+  - language: ru
+    value: Конструкция выражает мнение говорящего по некоторому вопросу и обычно вводит
+      [оценочное высказывание]Evaluation. Конструкция имеет значение 'я считаю, что
+      Cl'.
+  dependency_structure: '[root [parataxis [mark как] [case по] мне]], Cl]+[root [parataxis
+    [case по] мне]], Cl]'
+  equivalents:
+  - language: en
+    value: As for me,
+  - language: 'no'
+    value: Jeg tror, ... / Etter min mening, ... / For meg ...
+  examples:
+  - number: 1
+    value: Давно собирался посмотреть этот фильм и хотел было уже покупать dvd, а
+      тут узнал, что его как раз по ТВ показывают. И хорошо, что всё-таки не потратил
+      денег — как по мне, [фильм того совершенно не стоил]Evaluation.
+  - number: 2
+    value: Как по мне, так [в вагончике, где мы переодевались и обедали было не намного
+      чище, чем на улице]Evaluation.
+  - number: 3
+    value: Не знаю, по мне, так [ее голос идеально подходит для колыбельной!]Evaluation
+  - number: 4
+    value: 'Она была в красном платье. Элегантна, стройна, изящна. Но на любителя.
+      По мне ― [больно худая]Evaluation: сразу захотелось накормить ее котлетами.'
+  - number: 5
+    value: По мне, так [это все какая-то большая глупость]Evaluation.
+  family: Reference to the owner of opinion
+  glosses_dict:
+    en:
+    - value: (as)
+    - value: by
+    - value: me.DAT
+    - value: (so)
+    - value: Cl
+    ru:
+    - value: (как)
+    - value: по
+    - value: мне,
+    - value: (так)
+    - value: Cl
+  id: 11
+  illustration: Как по мне, это ещё не беда.
+  illustration_dependency_structure: '[root [parataxis [mark Как] [case по] мне]],
+    [nsubj это] [advmod ещё] [advmod не] беда.]'
+  morphological_tags:
+  - id: 5
+    name: Cl
+  name: (как) по мне, (так) Cl
+  name_ud: (как) по мне, (так) Cl
+  references: No references
+  semantic_roles:
+  - id: 11
+    name: Evaluation
+  semantic_types:
+  - id: 8
+    name: Source of opinion
+    parent_id: null
+  - id: 39
+    name: Expressing opinion
+    parent_id: 8
+  syntactic_functions:
+  - id: 7
+    name: Parenthetical
+  syntactic_structures:
+  - id: 7
+    name: Multiword Conjunction
+  syntactic_types:
+  - id: 6
+    name: Clause or XP with parentheticals
+  usage_label: c
+- anchor_poss:
+  - id: 8
+    name: Negation Marker
+  - id: 7
+    name: Adjective
+  - id: 9
+    name: Noun
+  anchor_words: не, самое, время
+  cefr_level: B1
+  comment: См. близкие конструкции со словом "время" 74 и 75, а также похожие конструкции
+    со словом "пора" 484 и 697.
+  common_fillers: обедать, рассказать, подумать
+  communicative_type: d
+  definitions:
+  - language: en
+    value: This construction means that the right moment has come to perform some
+      [action]Action, and that one must take advantage of this. When “не” is used,
+      the construction means that at the time of the utterance, the moment is not
+      conducive to the successful performance of the action, and the slot is filled
+      only with imperfective verbs.
+  - language: 'no'
+    value: Konstruksjonen betyr at det rette, passende øyeblikket for å utføre en
+      gitt [handling]Action er kommet og må benyttes. Ved bruk av "не" betyr konstruksjonen
+      at taletidspunktet ikke er det rette for å utføre handlingen, og sloten fylles
+      kun av verb i imperfektivt aspekt.
+  - language: ru
+    value: Конструкция обозначает, что для совершения некоторого [действия]Action
+      наступил удачный, подходящий момент и этим нужно воспользоваться. Когда используется
+      «не», конструкция обозначает, что момент речи не является удачным для совершения
+      этого действия, а слот заполняется только глаголами несовершенного вида.
+  dependency_structure: '[root [advmod не] время [cop Cop] [csubj VP-Inf]]+[root время
+    [cop Cop] [csubj VP-Inf]]'
+  equivalents:
+  - language: en
+    value: It's time to X
+  - language: 'no'
+    value: det er på tide å X
+  examples:
+  - number: 1
+    value: Сейчас не время [спорить.]Action
+  - number: 2
+    value: Но не время было [размышлять]Action. Иван Дмитриевич бросился девушке на
+      помощь, поручик ― за ним.
+  - number: 3
+    value: ― Ладно, мы ходим, ходим, а время [обедать]Action. Давайте купим поесть
+      чего-нибудь и пойдем к тебе.
+  - number: 4
+    value: Сейчас было самое время слегка [проветриться]Action, [прогуляться]Action,
+      [прийти в себя]Action.
+  - number: 5
+    value: Если фрау Урф дает обед в честь русских писателей, то она постарается.
+      Об этом еще будет время [рассказать]Action.
+  family: Proper time
+  glosses_dict:
+    en:
+    - value: ([NEG]/[exact])
+    - value: time
+    - value: COP
+    - value: VP-INF
+    ru:
+    - value: (не/самое)
+    - value: время
+    - value: Cop
+    - value: VP-Inf
+  id: 12
+  illustration: Самое время вершить большие дела.
+  illustration_dependency_structure: '[root [amod Самое] время [csubj вершить [amod
+    большие] [obj дела]].]'
+  morphological_tags:
+  - id: 3
+    name: Cop
+  - id: 8
+    name: VP
+  - id: 16
+    name: Inf
+  name: (не/самое) время Cop VP-Inf
+  name_ud: (не/самое) время Cop VP-Inf
+  references: No references
+  semantic_roles:
+  - id: 9
+    name: Action
+  semantic_types:
+  - id: 9
+    name: Causation
+    parent_id: null
+  - id: 40
+    name: Indirect
+    parent_id: 9
+  - id: 10
+    name: Time
+    parent_id: null
+  - id: 41
+    name: Proper time
+    parent_id: 10
+  syntactic_functions:
+  - id: 1
+    name: Praedicative Expression
+  syntactic_structures:
+  - id: 6
+    name: Negation
+  syntactic_types:
+  - id: 2
+    name: Copula Construction
+  usage_label: n
+total: 50

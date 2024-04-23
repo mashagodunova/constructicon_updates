@@ -1,0 +1,195 @@
+{% import "macros.html" as macros %}
+
+{% extends "base.html" %}
+
+{% block content %}
+
+  <div id="app">
+    <div v-if="all_data_loaded">
+      <div class="row">
+        {% block search %}
+        {% endblock search %}
+
+      <div class="container">
+        <ul>
+        <li v-for="(record, index) in records" :key="index">
+          <!-- {[ record.id ]}
+          {[ globId ]} -->
+          <span v-if="parseInt(record.id) === parseInt(globId)">
+            <!-- <div class="content" v-html="getIndexHtml(index)"></div> -->
+            
+            <div class="content">
+            <!-- <span value="index" id="current_in"></span> -->
+            <!-- Index: {[ index ]} -->
+           
+            <!-- {[ records.length ]}
+            {[ parseInt(globId)]}
+            {[ records[index].id ]} -->
+            <!-- <span :value='record.id' id="urlInput"></span> -->
+
+            <br>
+            <b>CONSTRUCTION &nbsp &nbsp &nbsp id:{[ records[index].id]}</b><br>
+            <b>{[ records[index].name ]}</b> - <i>{[ records[index].illustration ]}</i>
+            <br>
+
+            <br>
+            <div>
+  <b>GLOSSES:</b>
+  <table >
+    
+    <tr v-for="(lang) in ['ru', 'en']">
+<td style="border: 1px solid  white;padding: 7px;" v-for="(gloss) in records[index].glosses_dict[lang]">{[ gloss.value]}</td>
+    </tr>
+  </table>
+      <br>         
+</div>
+               
+            <input type="text" :value='record.id' id="urlInput" style="display: none;">
+            <button onclick="copyURL()" id="button_main">Copy URL</button>
+
+            <div v-for="definition in records[index].definitions">
+              <br>
+              <b>DEFINITION ({[ to_title_case(definition.language) ]})</b> <br><span v-html="annotate(definition.value)"></span>
+              <br>
+            </div>
+        
+            <br>
+            <b>EXAMPLES</b>
+            <ol>
+              <li v-for="example in records[index].examples"><span v-html="annotate(example.value)"></span></li>
+            </ol>
+        
+            <br>
+            <b>CEFR LEVEL:</b> {[ records[index].cefr_level ]}
+            <br>
+        
+            <br>
+            <input type="checkbox" id="checkbox" v-model="show_additional_information">
+            <label for="checkbox">Show additional information</label>
+        
+            <div v-if="show_additional_information">
+              
+              <div v-for="equivalent in records[globNumber].equivalents">
+                <br>
+                <b>EQUIVALENTS ({[ to_title_case(equivalent.language) ]})</b> <br><span v-html="equivalent.value"></span>
+                <br>
+              </div>
+              <br>
+        
+              <b>COMMON FILLERS</b>
+              <ul v-if="records[globNumber].common_fillers[0] != null">
+                <li v-for="item in parse_lists(records[globNumber].common_fillers)">{[ item ]}</li>
+              </ul>
+        
+              <br>
+        
+              <b>SEMANTIC TYPE</b>
+              <ul>
+                <li v-for="item in groupSemanticTypes(records[globNumber].semantic_types)">
+                  {[ item['name'] ]}
+                  <ul>
+                    <li v-for="it in item['children']">
+                        {[ it['name'] ]}
+                        <ul>
+                          <li v-for="it2 in it['children']">
+                              {[ it2['name'] ]}
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+        
+              <br>
+              <b>SYNTACTIC TYPE OF CONSTRUCTION</b>
+              <ul>
+                <li v-for="item in records[globNumber].syntactic_types">{[ item['name'] ]}</li>
+              </ul>
+        
+              <br>
+              <b>SYNTACTIC FUNCTION OF ANCHOR</b>
+              <ul>
+                <li v-for="item in records[globNumber].syntactic_functions">{[ item['name'] ]}</li>
+              </ul>
+        
+              <br>
+        
+              <b>SYNTACTIC STRUCTURE OF ANCHOR</b>
+              <ul>
+                <li v-for="item in records[globNumber].syntactic_structures">{[ item.name ]}</li>
+              </ul>
+        
+              <br>
+              <b>PART OF SPEECH OF ANCHOR</b>
+              <ul>
+                <li v-for="item in records[globNumber].anchor_poss">{[ item['name'] ]}</li>
+              </ul>
+        
+              <br>
+              <b>DEPENDENCY STRUCTURE</b>
+              <ol>
+                <li v-for="item in parse_dependency_structures(records[globNumber].dependency_structure)">{[ item ]}</li>
+              </ol>
+        
+              <br>
+              <b>DEPENDENCY STRUCTURE OF ILLUSTRATION</b>
+              <ol>
+                <li v-for="item in parse_dependency_structures(records[globNumber].illustration_dependency_structure)">{[ item ]}</li>
+              </ol>
+        
+              <br>
+              <b>COMMUNICATIVE TYPE</b>
+              <ul>
+                <li v-for="item in records[globNumber].communicative_type">{[ get_full_tags(item) ]}</li>
+              </ul>
+        
+              <br>
+        
+              <b>USAGE LABEL</b> {[ get_full_tags(records[globNumber].usage_label) ]}
+              <br>
+        
+              <br>
+              <b>COMMENT</b> <br> {[ records[globNumber].comment ]}
+              <br>
+        
+              <br>
+              <b>REFERENCES</b>
+              <br>
+              {[records[globNumber].references]}
+              </ul>
+            
+            </div>       
+          </div>
+          </span>
+        </li>
+      </ul>
+      </div>
+
+  </div>
+  
+  <script>
+
+    // var url = '/new-page/' + 'id=' + String(localStorage.getItem('globId'));
+    // window.history.pushState({path: url}, '', url);
+
+    function copyURL() {
+      var constr_id = document.getElementById("urlInput");
+      constr_id.select();
+      constr_id.setSelectionRange(0, 99999); 
+      var copy_text = window.location.href + String(constr_id.value);
+      navigator.clipboard.writeText(copy_text);
+
+      var copyButton = document.getElementById("button_main");
+      copyButton.style.backgroundColor = "green";
+      copyButton.innerText = "Copied!";
+
+      setTimeout(function() {
+        copyButton.style.backgroundColor = "";
+        copyButton.innerText = "Copy URL";
+      }, 1000);
+
+    }
+
+  </script>
+  
+{% endblock content %}

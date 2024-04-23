@@ -1,0 +1,103 @@
+[project]
+name = "app"
+version = "0.0.0"
+dependencies = [
+    "sqlmodel==0.0.8",
+    "Jinja2",
+    "emails",
+    "fastapi==0.95.0",
+    "passlib",
+    "pydantic==1.10.12",
+    "pydantic[dotenv]",
+    "pydantic[email]",
+    "fastapi-users[sqlalchemy]==10.4.1",
+    "python-jose",
+    "python-multipart",
+    "pyyaml",
+    "sqlalchemy==1.4.41",
+    "sqlalchemy[asyncio]==1.4.41",
+    "uvicorn",
+    "alembic",
+    "tqdm",
+
+    # DB
+    # "asyncmy", "mysqlclient", "cryptography",  # MySQL
+    "aiosqlite", # sqlite
+    # "asyncpg", # postgres
+]
+
+[project.optional-dependencies]
+dev = [
+    "aiosmtpd",
+    "aiosqlite",
+    "alembic",
+    "httpx",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "pytest-mypy",
+    "pytest-pylint",
+    "pylint-pydantic",
+    "pytest-xdist",
+    "sqlalchemy[mypy]==1.4.41",
+    "types-python-jose",
+    "types-passlib",
+    "pytest-regressions",
+    "pyfakefs",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.mypy]
+exclude = "venv"
+plugins = [
+    "pydantic.mypy",
+    # "sqlalchemy.ext.mypy.plugin",
+]
+strict = true
+warn_unreachable = true
+disable_error_code = "attr-defined"
+
+[tool.setuptools]
+packages = ["app"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+disable_test_id_escaping_and_forfeit_all_rights_to_community_support = true
+addopts = [
+    "--pylint",
+    "--mypy",
+    "--cov=app", "--cov-report=xml", "--no-cov-on-fail",
+    # "-k", "test_item_get",
+    # "-k", "test_use_token",
+    # "-k", "test_construction_list_random_sort",
+    # "-k", "test_construction_list",
+    # "-k", "test_construction_import",
+    # "-k", "test_construction_import_glosses",
+    # "-k", "test_info",
+    # "-k", "test_schema",
+    # "-k", "tests/",
+    # "-k", "mypy",
+    # "-k", "pylint",
+    # "-k", "test_construction_import",
+    # "--force-regen",
+    # "-r", "A",
+    # "--maxfail", "1",
+    # "--pdb",
+    # "-v",
+    # "-vv",
+    # "--showlocals",
+    # "-n", "auto",
+    # "--durations", "5",
+]
+
+testpaths = [
+    "tests",
+    "app",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning:pylint*",
+    "ignore::DeprecationWarning:pytest_pylint*",
+]

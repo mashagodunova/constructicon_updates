@@ -1,0 +1,6 @@
+generatorName: typescript-axios
+outputDir: ./api_clients/ts_axios
+inputSpec: ./api_clients/api_schema.yaml
+disallowAdditionalPropertiesIfNotPresent: false
+additionalProperties:
+  useSingleRequestParameter: "true"

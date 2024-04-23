@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+
+    <title>Constructicon</title>
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/constructicon/russian/main/content/logo/constructicon-round.png" />
+    
+
+    
+      <meta name="description" content="Description of the Constructicon.
+" />
+      <meta name="twitter:description" content="Description of the Constructicon.
+" />
+    
+
+    
+      <meta name="twitter:title" content="Constructicon" />
+    
+
+<link rel="stylesheet" href="https://constructicon.ruscorpora.ru/static/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://constructicon.ruscorpora.ru/static/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://constructicon.ruscorpora.ru/static/css/vue-treeselect.min.css" />
+                                             
+<script src="https://constructicon.ruscorpora.ru/static/js/vue.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/vue-treeselect.umd.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/js-yaml.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/axios.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/lodash.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/js-search.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/chart.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/chartjs-plugin-datalabels.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/d3.v7.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/jquery-3.5.1.slim.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/popper.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/bootstrap.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/bootstrap.bundle.min.js" defer></script>
+
+    <link href="https://constructicon.ruscorpora.ru/static/css/style.css" rel="stylesheet">
+    <script src="https://constructicon.ruscorpora.ru/static/js/constructicon.js" defer></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- navigation -->
+      <div class="row top-buffer">
+        <div class="col-md-3">
+          <figure class="figure">
+            
+            <img src="https:&#x2F;&#x2F;constructicon.ruscorpora.ru&#x2F;processed_images&#x2F;66ea0c2bc689ec2a00.png"
+                 class="figure-img img-fluid rounded" alt="Constructicon logo">
+          </figure>
+        </div>
+        <div class="col-md-9">
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d9f2ff;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-5">
+                  <a class="nav-link" href="https://constructicon.ruscorpora.ru/">Browse</a>
+                </li>
+                  <li class="nav-item mr-5">
+                      <a class="nav-link" href="https://constructicon.ruscorpora.ru/advanced-search/">Advanced search</a>
+                  </li>
+                <li class="nav-item mr-5">
+                  <a class="nav-link" href="https://constructicon.ruscorpora.ru/daily/">Daily dose</a>
+                </li>
+                  <li class="nav-item mr-5">
+                      <a class="nav-link" href="https://constructicon.ruscorpora.ru/statistics/">Statistics</a>
+                  </li>
+                  <li class="nav-item mr-5">
+                      <a class="nav-link" href="https://constructicon.ruscorpora.ru/instructions/">Instructions</a>
+                  </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="https://constructicon.ruscorpora.ru/about/">About</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- end navigation -->
+
+      <div class="top-buffer">
+        
+    <h7>Syntactic type of construction</h7>
+    <div class="chart-container2">
+        <canvas id="chart2" width="600" height="300"></canvas>
+    </div>
+    <h7>Syntactic function of anchor</h7>
+    <div class="chart-container3">
+        <canvas id="chart3" width="600" height="450"></canvas>
+    </div>
+    <h7>Semantic type of construction</h7>
+    <div>
+        <select class="selectST" onchange="changeData('chart1')" id="syntType">
+            <option value="Biclausal Construction">Biclausal Construction</option>
+            <option value="Clause and Modifier Construction">Clause and Modifier Construction</option>
+            <option value="Clause or XP with parentheticals">Clause or XP with parentheticals</option>
+            <option value="Clause">Clause</option>
+            <option value="Connection Construction">Connection Construction</option>
+            <option value="Copula Construction">Copula Construction</option>
+            <option value='Discourse "Echo" Construction'>Discourse "Echo" Construction</option>
+            <option value="Head and Modifier Construction">Head and Modifier Construction</option>
+            <option value="Matrix and Infinitival Complement Construction">Matrix and Infinitival Complement Construction</option>
+            <option value="Matrix and Sentential Complement Construction">Matrix and Sentential Complement Construction</option>
+            <option value="Morphological Construction">Morphological Construction</option>
+            <option value="Predicate Argument Construction">Predicate Argument Construction</option>
+            <option value="All" selected>All</option>
+        </select>
+    </div>
+    <div class="chart-container1">
+        <canvas id="chart1" width="600"></canvas>
+    </div>
+    <h7>Top of anchors by parts of speech</h7>
+    <div class="wrap">
+        <div class="bblock" id="TopVerbs">
+            <h3>Top-10 verbs</h3>
+        </div>
+        <div class="bblock" id="TopNouns">
+            <h3>Top-10 nouns</h3>
+        </div>
+        <div class="bblock" id="TopAdjectives">
+            <h3>Top-10 adjectives</h3>
+        </div>
+    </div>
+
+      </div>
+
+      <div class="more-buffer">
+		
+
+      </div>
+    </div>
+
+    
+    <script src="https://constructicon.ruscorpora.ru/static/js/statistics.js"></script>
+
+
+  </body>
+</html>

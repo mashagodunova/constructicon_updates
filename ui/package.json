@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "zola-bin": "^0.3.5"
+  },
+  "scripts": {
+      "build": "yarn run zola-bin build",
+      "serve": "yarn run zola-bin serve -p 3000 -i 0.0.0.0"
+  }
+}

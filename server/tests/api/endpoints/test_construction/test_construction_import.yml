@@ -1,0 +1,88 @@
+items:
+- anchor_poss:
+  - id: 1
+    name: Conjunction
+  - id: 2
+    name: Pronoun
+  - id: 3
+    name: Particle
+  anchor_words: а, как, же
+  cefr_level: A1
+  comment: 'Не путать с конструкцией 682. См. другие конструкции, которые содержат
+    "как же": 1107, 1108, 1109, 1814, 2015.'
+  common_fillers: ''
+  communicative_type: i
+  definitions:
+  - language: en
+    value: This construction is used to remind the addressee of [some fact]Theme,
+      which they must take into consideration. This fact is known to all of the participants
+      in the conversation.
+  - language: 'no'
+    value: Konstruksjonen anvendes for å minne adressaten på [et faktum]Theme som
+      vedkommende må ta i betraktning. Faktumet er kjent for alle deltakerne i samtalen.
+  - language: ru
+    value: Конструкция используется для того, чтобы напомнить адресату о [каком-либо
+      факте]Theme, который он должен принять во внимание. Этот факт известен всем
+      участникам беседы.
+  dependency_structure: '[root как [advmod же] [nsubj NP-Nom]]+[root [cc а] как [advmod
+    же] [nsubj NP-Nom]]'
+  equivalents:
+  - language: en
+    value: What about X?
+  - language: 'no'
+    value: Hva med X?
+  examples:
+  - number: 1
+    value: 'Иван поднял голову и спросил: ― А как же [я]Theme? ― Ты будешь жить с
+      женой и воспитывать сына, ― ответила Ирина.'
+  - number: 2
+    value: ― Всё, ― объявил водитель, ― дальше не поеду. ― Как же [деньги]Theme? Я
+      заплатил за билет!
+  - number: 3
+    value: В нашем городе ему предложили хорошую работу, поэтому он недолго думая
+      сорвался с насиженного места и уехал. ― А как же  [жена и дети]Theme? ― поинтересовалась
+      Маша.
+  - number: 4
+    value: 'Но как только разговор заходит о семейном обучении, первым делом звучит:
+      «А как же [общение]Theme? [Социализация]Theme?»'
+  - number: 5
+    value: 'В деревне делали более лёгкую пиццу: тесто поливали оливковым маслом,
+      выкладывали маслины или вообще ничем не украшали. А как же [томаты]Theme, спросите
+      вы. Ведь без них попросту невозможно представить себе пиццу.'
+  family: ''
+  glosses_dict: {}
+  id: 3
+  illustration: А как же мама?
+  illustration_dependency_structure: '[root [cc А] как [advmod же] [nsubj мама]?]'
+  morphological_tags:
+  - id: 1
+    name: NP
+  - id: 2
+    name: Nom
+  name: (а) как же NP-Nom?
+  name_ud: (а) как же NP-Nom?
+  references: No references
+  semantic_roles:
+  - id: 1
+    name: Theme
+  semantic_types:
+  - id: 1
+    name: Reaction to the previous discourse
+    parent_id: null
+  - id: 3
+    name: Surprise
+    parent_id: 1
+  - id: 2
+    name: Mirative
+    parent_id: null
+  syntactic_functions:
+  - id: 1
+    name: Praedicative Expression
+  syntactic_structures:
+  - id: 1
+    name: Not Applicable
+  syntactic_types:
+  - id: 1
+    name: Clause
+  usage_label: n
+total: 1

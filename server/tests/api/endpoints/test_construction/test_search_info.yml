@@ -1,0 +1,412 @@
+anchor_poss:
+- id: 1
+  name: Conjunction
+- id: 2
+  name: Pronoun
+- id: 3
+  name: Particle
+- id: 4
+  name: Preposition
+- id: 5
+  name: Adverb
+- id: 6
+  name: Verb
+- id: 7
+  name: Adjective
+- id: 8
+  name: Negation Marker
+- id: 9
+  name: Noun
+- id: 10
+  name: Predicative
+- id: 11
+  name: Numeral
+- id: 12
+  name: Interjection
+- id: 13
+  name: Not Applicable
+- id: 14
+  name: Converb
+morphological_tags:
+- id: 1
+  name: NP
+- id: 2
+  name: Nom
+- id: 3
+  name: Cop
+- id: 4
+  name: Noun
+- id: 5
+  name: Cl
+- id: 6
+  name: XP
+- id: 7
+  name: Adv
+- id: 8
+  name: VP
+- id: 9
+  name: Short
+- id: 10
+  name: Acc
+- id: 11
+  name: Ins
+- id: 12
+  name: Dat
+- id: 13
+  name: Ipfv
+- id: 14
+  name: Prep
+- id: 15
+  name: PP
+- id: 16
+  name: Inf
+- id: 17
+  name: Imp
+- id: 18
+  name: Pfv
+- id: 19
+  name: Pst
+- id: 20
+  name: Verb
+- id: 21
+  name: PronInt
+- id: 22
+  name: PronPers
+- id: 23
+  name: NumCrd
+- id: 24
+  name: Gen
+- id: 25
+  name: Adj
+- id: 26
+  name: Pred
+- id: 27
+  name: Fut
+- id: 28
+  name: Loc
+semantic_roles:
+- id: 1
+  name: Theme
+- id: 2
+  name: Content
+- id: 3
+  name: Cognizer
+- id: 4
+  name: Topic
+- id: 5
+  name: Property
+- id: 6
+  name: Standard
+- id: 7
+  name: Situation
+- id: 8
+  name: Participant
+- id: 9
+  name: Action
+- id: 10
+  name: Experiencer
+- id: 11
+  name: Evaluation
+- id: 12
+  name: Condition
+- id: 13
+  name: Concession
+- id: 14
+  name: Patient
+- id: 15
+  name: Agent
+- id: 16
+  name: Event
+- id: 17
+  name: Activity
+- id: 18
+  name: Location
+- id: 19
+  name: Manner
+- id: 20
+  name: Goal
+- id: 21
+  name: Name
+- id: 22
+  name: Landmark
+- id: 23
+  name: Status
+- id: 24
+  name: Recipient
+- id: 25
+  name: Contained
+- id: 26
+  name: Container
+- id: 27
+  name: Sense
+semantic_types:
+- id: 1
+  name: Reaction to the previous discourse
+  parent_id: null
+- id: 2
+  name: Mirative
+  parent_id: null
+- id: 3
+  name: Epistemic modality
+  parent_id: null
+- id: 4
+  name: Discourse structure
+  parent_id: null
+- id: 5
+  name: Comparison
+  parent_id: null
+- id: 6
+  name: Degree of intensity
+  parent_id: null
+- id: 7
+  name: Quantification
+  parent_id: null
+- id: 8
+  name: Source of opinion
+  parent_id: null
+- id: 9
+  name: Causation
+  parent_id: null
+- id: 10
+  name: Time
+  parent_id: null
+- id: 11
+  name: Concession
+  parent_id: null
+- id: 12
+  name: Attitude
+  parent_id: null
+- id: 13
+  name: Root modality
+  parent_id: null
+- id: 14
+  name: Assessment
+  parent_id: null
+- id: 15
+  name: Volition
+  parent_id: null
+- id: 16
+  name: Prohibition
+  parent_id: null
+- id: 17
+  name: Non-existence
+  parent_id: null
+- id: 18
+  name: Measure
+  parent_id: null
+- id: 19
+  name: Purpose
+  parent_id: null
+- id: 20
+  name: Spatial expression
+  parent_id: null
+- id: 21
+  name: Timeline
+  parent_id: null
+- id: 22
+  name: Phase of action
+  parent_id: null
+- id: 23
+  name: Degree of accuracy
+  parent_id: null
+- id: 24
+  name: Salient property
+  parent_id: null
+- id: 25
+  name: Request
+  parent_id: null
+- id: 26
+  name: Cause
+  parent_id: null
+- id: 27
+  name: Condition
+  parent_id: null
+- id: 28
+  name: Temporary characteristics
+  parent_id: null
+- id: 29
+  name: Threat
+  parent_id: null
+- id: 30
+  name: Manner
+  parent_id: null
+- id: 31
+  name: Surprise
+  parent_id: 1
+- id: 32
+  name: Low degree of certainty
+  parent_id: 3
+- id: 33
+  name: Topic
+  parent_id: 4
+- id: 34
+  name: Similarity
+  parent_id: 5
+- id: 35
+  name: Unspecified
+  parent_id: 1
+- id: 36
+  name: Emphasis
+  parent_id: 4
+- id: 37
+  name: Minimizer
+  parent_id: 6
+- id: 38
+  name: Exclusive
+  parent_id: 7
+- id: 39
+  name: Expressing opinion
+  parent_id: 8
+- id: 40
+  name: Indirect
+  parent_id: 9
+- id: 41
+  name: Proper time
+  parent_id: 10
+- id: 42
+  name: Dissatisfaction
+  parent_id: 12
+- id: 43
+  name: Contrast
+  parent_id: 5
+- id: 44
+  name: Necessity
+  parent_id: 13
+- id: 45
+  name: Negative
+  parent_id: 14
+- id: 46
+  name: Direct
+  parent_id: 9
+- id: 47
+  name: Prohibitive
+  parent_id: 16
+- id: 48
+  name: No choice
+  parent_id: 12
+- id: 49
+  name: Path
+  parent_id: 20
+- id: 50
+  name: Recent past
+  parent_id: 21
+- id: 51
+  name: Positive
+  parent_id: 14
+- id: 52
+  name: Continuative
+  parent_id: 22
+- id: 53
+  name: Positive; Negative
+  parent_id: 14
+- id: 54
+  name: Approximate
+  parent_id: 23
+- id: 55
+  name: Status
+  parent_id: 24
+- id: 56
+  name: Booster
+  parent_id: 6
+- id: 57
+  name: Terminative
+  parent_id: 22
+- id: 58
+  name: Continuative prohibitive
+  parent_id: 16
+- id: 59
+  name: Future
+  parent_id: 21
+- id: 60
+  name: Support
+  parent_id: 12
+- id: 61
+  name: Emotional state
+  parent_id: 28
+- id: 62
+  name: Disapproval
+  parent_id: 12
+- id: 63
+  name: Emotional attitude
+  parent_id: 12
+- id: 64
+  name: Unaffected generally
+  parent_id: 17
+- id: 65
+  name: Accentuation
+  parent_id: 1
+- id: 66
+  name: Location
+  parent_id: 20
+- id: 67
+  name: Absence
+  parent_id: 37
+- id: 68
+  name: External
+  parent_id: 44
+- id: 69
+  name: Goal
+  parent_id: 49
+syntactic_functions:
+- id: 1
+  name: Praedicative Expression
+- id: 2
+  name: Matrix Predicate
+- id: 3
+  name: Modifier
+- id: 4
+  name: Argument
+- id: 5
+  name: Subordinator
+- id: 6
+  name: Discourse Particle
+- id: 7
+  name: Parenthetical
+- id: 8
+  name: Coordinator
+- id: 9
+  name: Verb Predicate
+- id: 10
+  name: Word-Formation
+syntactic_structures:
+- id: 1
+  name: Not Applicable
+- id: 2
+  name: Prepositional Phrase
+- id: 3
+  name: Subject and Predicate
+- id: 4
+  name: Nominal Pattern
+- id: 5
+  name: Double Negation
+- id: 6
+  name: Negation
+- id: 7
+  name: Multiword Conjunction
+- id: 8
+  name: Light Verb Construction
+- id: 9
+  name: Reduplication
+- id: 10
+  name: Multiword Preposition
+syntactic_types:
+- id: 1
+  name: Clause
+- id: 2
+  name: Copula Construction
+- id: 3
+  name: Matrix and Sentential Complement Construction
+- id: 4
+  name: Head and Modifier Construction
+- id: 5
+  name: Biclausal Construction
+- id: 6
+  name: Clause or XP with parentheticals
+- id: 7
+  name: Connection Construction
+- id: 8
+  name: Matrix and Infinitival Complement Construction
+- id: 9
+  name: Predicate Argument Construction
+- id: 10
+  name: Clause and Modifier Construction

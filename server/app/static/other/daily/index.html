@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+
+    <title>Constructicon</title>
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/constructicon/russian/main/content/logo/constructicon-round.png" />
+    
+
+    
+      <meta name="description" content="Description of the Constructicon.
+" />
+      <meta name="twitter:description" content="Description of the Constructicon.
+" />
+    
+
+    
+      <meta name="twitter:title" content="Constructicon" />
+    
+
+<link rel="stylesheet" href="https://constructicon.ruscorpora.ru/static/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://constructicon.ruscorpora.ru/static/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://constructicon.ruscorpora.ru/static/css/vue-treeselect.min.css" />
+                                             
+<script src="https://constructicon.ruscorpora.ru/static/js/vue.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/vue-treeselect.umd.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/js-yaml.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/axios.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/lodash.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/js-search.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/chart.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/chartjs-plugin-datalabels.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/d3.v7.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/jquery-3.5.1.slim.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/popper.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/bootstrap.min.js" defer></script>
+<script src="https://constructicon.ruscorpora.ru/static/js/bootstrap.bundle.min.js" defer></script>
+
+    <link href="https://constructicon.ruscorpora.ru/static/css/style.css" rel="stylesheet">
+    <script src="https://constructicon.ruscorpora.ru/static/js/constructicon.js" defer></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- navigation -->
+      <div class="row top-buffer">
+        <div class="col-md-3">
+          <figure class="figure">
+            
+            <img src="https:&#x2F;&#x2F;constructicon.ruscorpora.ru&#x2F;processed_images&#x2F;66ea0c2bc689ec2a00.png"
+                 class="figure-img img-fluid rounded" alt="Constructicon logo">
+          </figure>
+        </div>
+        <div class="col-md-9">
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d9f2ff;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-5">
+                  <a class="nav-link" href="https://constructicon.ruscorpora.ru/">Browse</a>
+                </li>
+                  <li class="nav-item mr-5">
+                      <a class="nav-link" href="https://constructicon.ruscorpora.ru/advanced-search/">Advanced search</a>
+                  </li>
+                <li class="nav-item mr-5">
+                  <a class="nav-link" href="https://constructicon.ruscorpora.ru/daily/">Daily dose</a>
+                </li>
+                  <li class="nav-item mr-5">
+                      <a class="nav-link" href="https://constructicon.ruscorpora.ru/statistics/">Statistics</a>
+                  </li>
+                  <li class="nav-item mr-5">
+                      <a class="nav-link" href="https://constructicon.ruscorpora.ru/instructions/">Instructions</a>
+                  </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="https://constructicon.ruscorpora.ru/about/">About</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- end navigation -->
+
+      <div class="top-buffer">
+        
+  <div id="app" v-cloak>
+<!-- Размещаем внутри тега с id="app" для корректной работы с Vue.js -->
+
+    <div v-if="show_data_spinner">
+      <div class="row top-buffer">
+        <div class="col-md-12">
+        <h1>Loading data (can take few seconds) ...</h1>
+          <div class="spinner-border text-success" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div v-if="all_data_loaded">
+      <div class="row">
+        
+  <div class="row top-buffer">
+    <div class="col-md-3">
+      <label>Level</label>
+      <select v-model="daily_dose_level" class="form-control">
+        <option v-for="level in level_options">
+          {[ level.label ]}
+        </option>
+      </select>
+    </div>
+    <div class="col-md-9">
+      <label>Get 5 random records for level {[ daily_dose_level ]}</label>
+      <br>
+      <button v-on:click="get_random_selection()" type="button" class="btn btn-primary">
+        Get random records
+      </button>
+    </div>
+  </div>
+
+        <div>
+    <label><input type="radio" value="name" v-model="searchType" id="button_main"> Construction </label>
+    <label><input type="radio" value="glosses" v-model="searchType" id="button_main"> Glosses</label>
+    <label><input type="radio" value="illustration_text" v-model="searchType" id="button_main"> Illustration</label>
+      </div>
+        <div class="row top-buffer">
+        <div class="col-md-12 ">
+          <div v-if="records.length > 0">
+            <div class="form-group">
+              <label>Results</label>
+              <select v-model="current_record_number" class="form-control" size="10" @change="globIdUpdate(current_record_number, records)">
+                <option v-for="(record, index) in records" :value="index">
+                  {[ record.id ]}.
+                  <b>{[ record.name ]}</b>
+                  &nbsp;
+                  |
+                  &nbsp;
+                  <i>{[ record.illustration ]}</i>
+
+                </option>
+              </select>
+            </div>
+<!--            Number of matching constructions: {[record_numbers_matching_search.length]}-->
+<!--            Пока что:-->
+          
+          Number of matching constructions: {[ records_number ]}
+          
+          <!-- {[ globId ]}
+          {[ current_record_number ]} -->
+          </div>
+          <div v-else>
+            No matching constructions
+                {[ records ]}.
+          </div>
+        </div>
+
+          <div v-if="current_record_number == null">
+            
+            
+          </div>
+          
+      <div class="row top-buffer">
+        <div class="col-md-12">
+          <div v-if="current_record_number != null">
+
+            <!-- {[ records[current_record_number].id ]} -->
+            
+            <br>
+
+           <b>CONSTRUCTION &nbsp &nbsp &nbsp id:{[ records[current_record_number].id]}</b><br>
+            <b>{[ records[current_record_number].name ]}</b> - <i>{[ records[current_record_number].illustration ]}</i>
+            <br>
+            <br>
+            <div>
+  <b>GLOSSES:</b>
+  <table >
+    
+    <tr v-for="(lang) in ['ru', 'en']">
+<td style="border: 1px solid  white;padding: 7px;" v-for="(gloss) in records[current_record_number].glosses_dict[lang]">{[ gloss.value]}</td>
+    </tr>
+  </table>
+                <br>
+</div>
+            <button onclick="window.location.href='/construction/'" id="button_main">Open on new page</button>
+
+            <div v-for="definition in records[current_record_number].definitions">
+              <br>
+              <b>DEFINITION ({[ to_title_case(definition.language) ]})</b> <br><span v-html="annotate(definition.value)"></span>
+              <br>
+            </div>
+
+            <br>
+            <b>EXAMPLES</b>
+            <ol>
+              <li v-for="example in records[current_record_number].examples"><span v-html="annotate(example.value)"></span></li>
+            </ol>
+
+            <br>
+            <b>CEFR LEVEL:</b> {[ records[current_record_number].cefr_level ]}
+            <br>
+
+            <br>
+            <input type="checkbox" id="checkbox" v-model="show_additional_information">
+            <label for="checkbox">Show additional information</label>
+
+            <div v-if="show_additional_information">
+              <div v-for="equivalent in records[current_record_number].equivalents">
+                <br>
+                <b>EQUIVALENTS ({[ to_title_case(equivalent.language) ]})</b> <br><span v-html="equivalent.value"></span>
+                <br>
+              </div>
+              <br>
+
+              <b>COMMON FILLERS</b>
+              <ul v-if="records[current_record_number].common_fillers[0] != null">
+                <li v-for="item in parse_lists(records[current_record_number].common_fillers)">{[ item ]}</li>
+              </ul>
+
+              <br>
+
+              <b>SEMANTIC TYPE</b>
+              <ul>
+                <li v-for="item in groupSemanticTypes(records[current_record_number].semantic_types)">
+                  {[ item['name'] ]}
+                  <ul>
+                    <li v-for="it in item['children']">
+                        {[ it['name'] ]}
+                        <ul>
+                          <li v-for="it2 in it['children']">
+                              {[ it2['name'] ]}
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <br>
+              <b>SYNTACTIC TYPE OF CONSTRUCTION</b>
+              <ul>
+                <li v-for="item in records[current_record_number].syntactic_types">{[ item['name'] ]}</li>
+              </ul>
+
+              <br>
+              <b>SYNTACTIC FUNCTION OF ANCHOR</b>
+              <ul>
+                <li v-for="item in records[current_record_number].syntactic_functions">{[ item['name'] ]}</li>
+              </ul>
+
+              <br>
+              <!--              FIXME: add to the api-->
+
+              <b>SYNTACTIC STRUCTURE OF ANCHOR</b>
+              <ul>
+                <li v-for="item in records[current_record_number].syntactic_structures">{[ item.name ]}</li>
+              </ul>
+
+              <br>
+              <b>PART OF SPEECH OF ANCHOR</b>
+              <ul>
+                <li v-for="item in records[current_record_number].anchor_poss">{[ item['name'] ]}</li>
+              </ul>
+
+              <br>
+              <b>DEPENDENCY STRUCTURE</b>
+              <ol>
+                <li v-for="item in parse_dependency_structures(records[current_record_number].dependency_structure)">{[ item ]}</li>
+              </ol>
+
+              <br>
+              <b>DEPENDENCY STRUCTURE OF ILLUSTRATION</b>
+              <ol>
+                <li v-for="item in parse_dependency_structures(records[current_record_number].illustration_dependency_structure)">{[ item ]}</li>
+              </ol>
+
+              <br>
+              <b>COMMUNICATIVE TYPE</b>
+              <ul>
+                <li v-for="item in records[current_record_number].communicative_type">{[ get_full_tags(item) ]}</li>
+              </ul>
+
+              <br>
+
+              <b>USAGE LABEL</b> {[ get_full_tags(records[current_record_number].usage_label) ]}
+              <br>
+
+              <br>
+              <b>COMMENT</b> <br> {[ records[current_record_number].comment ]}
+              <br>
+
+              <br>
+              <b>REFERENCES</b>
+              <br>
+              {[records[current_record_number].references]}
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+      </div>
+
+      <div class="more-buffer">
+		
+
+      </div>
+    </div>
+
+    
+    
+
+  </body>
+</html>
